@@ -12,15 +12,6 @@ export default {
   components: {
     HelloWorld
   },
-  created(){
-    const api = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/products`; //'https://vue-course-api.hexschool.io/api/pnjle6587/products';
-
-    console.log(process.env.APIPATH);  
-
-    this.$http.get(api).then((response) => {
-      console.log(response.data)
-    })
-  },
 }
 </script>
 
